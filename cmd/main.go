@@ -1,17 +1,3 @@
-# go-magic
-go-magic is a golang library that wraps [libmagic](https://linux.die.net/man/3/libmagic)
-
-## Requirements
-go-magic needs `libmagic` to be installed.
-- On Debian or Ubuntu: apt-get install -y libmagic-dev
-- On RHEL, CentOS or Fedora: yum install file-devel
-- On Mac OS X: brew install libmagic
-
-## Installing
-```go get -u github.com/wanglei-coder/go-magic```
-
-## Using the library
-```
 package main
 
 import (
@@ -33,6 +19,7 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	defer m.Close()
 
 	got, err := m.FromFile(filename)
 	if err != nil {
@@ -40,4 +27,3 @@ func main() {
 	}
 	log.Println(got)
 }
-```
