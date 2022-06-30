@@ -3,9 +3,9 @@ go-magic is a golang library that wraps [libmagic](https://linux.die.net/man/3/l
 
 ## Requirements
 go-magic needs `libmagic` to be installed.
-- On Debian or Ubuntu: apt-get install -y libmagic-dev
-- On RHEL, CentOS or Fedora: yum install file-devel
-- On Mac OS X: brew install libmagic
+- On Debian or Ubuntu: `apt-get install -y libmagic-dev`
+- On RHEL, CentOS or Fedora: `yum install file-devel`
+- On Mac OS X: `brew install libmagic`
 
 ## Installing
 ```go get -u github.com/wanglei-coder/go-magic```
