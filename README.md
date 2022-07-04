@@ -11,7 +11,7 @@ go-magic needs `libmagic` to be installed.
 ```go get -u github.com/wanglei-coder/go-magic```
 
 ## Using the library
-```
+```go
 package main
 
 import (
